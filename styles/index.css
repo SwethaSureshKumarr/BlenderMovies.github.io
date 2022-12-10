@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+/* header styles  */
+
+.user img {
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    right: 275px;
+}
+
+.user .username {
+    display: inline-block;
+    position: absolute;
+    top: 26px;
+    right: 338px;
+    font-weight: 500;
+}
+
+.logo {
+    margin-left: 256px;
+}
+
+header {
+    position: fixed;
+    top: 0px;
+    background-color: #ffffff;
+    box-shadow: 0 0 4px 0 rgb(0 0 0 / 8%), 0 2px 4px 0 rgb(0 0 0 / 12%);
+    width: 100vw;
+    z-index: 1;
+    height: 68px;
+    display: flex;
+    align-items: center;
+}
+
+
+/* main styles */
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #f5f5f5;
+}
+
+
+/* styles for video and the comments */
+
+.video-wrapper {
+    display: inline-block;
+    margin-top: 100px;
+    margin-right: 33px;
+    width: 50%;
+}
+
+.video-wrapper #video {
+    width: 100%;
+}
+
+.video-wrapper h2 {
+    margin-top: 10px;
+    margin-bottom: 11px;
+}
+
+.comment-img {
+    display: inline-block;
+    width: 80px;
+    height: 77px;
+    border-radius: 50px;
+    margin-top: 15px;
+}
+
+.name-desc {
+    display: inline-block;
+    width: 80%;
+    margin: 5px;
+    font-size: 23px;
+    font-weight: 600;
+}
+
+p.comment-name {
+    margin: 5px;
+    /* margin-bottom: 8px; */
+    font-size: 23px;
+    font-weight: 600;
+}
+
+p.comments-desc {
+    width: 112%;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 5px;
+}
+
+.horizontal-line {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: #bbbbbb 1px solid;
+    border-radius: 5px;
+}
+
+
+/* styles for the upcoming projects  */
+
+.projects-wrapper {
+    display: inline-block;
+    margin-top: 94px;
+    width: 21%;
+}
+
+.poster-img {
+    display: block;
+    width: 100%;
+    height: 500px;
+    margin: 15px 15px 15px 0px;
+}
+
+
+/* styles for main ends here */
+
+footer {
+    background-color: #292e2d;
+    color: #ffffff;
+    padding: 2% 0%;
+}
+
+.chat {
+    display: flex;
+    background-color: #c432ae;
+    width: 55px;
+    height: 55px;
+    /* position: absolute; */
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* responsive styles for mobile version */
+
+@media screen and (max-width:600px) {
+    .video-wrapper {
+        margin: 2%;
+        margin-top: 78px;
+        width: 103%;
+    }
+    .projects-wrapper {
+        margin: 2%;
+        display: block;
+        width: 95%;
+    }
+    .logo {
+        font-size: 18px;
+        margin-left: 10px;
+    }
+    .username {
+        visibility: hidden;
+    }
+    .user img {
+        right: 10px;
+    }
+    footer {
+        text-align: center;
+        padding: 5% 0%;
+    }
+    p.copyright {
+        font-size: 12px;
+    }
+    p.brand-name {
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .chat-wrapper {
+        position: fixed;
+        bottom: 6%;
+        right: 4%;
+        border-radius: 50px;
+        background-color: #f5f5f5;
+    }
+    .name-desc {
+        display: inline-block;
+        width: 70%;
+        margin: 5px;
+        font-weight: 600;
+    }
+    p.comment-name {
+        font-size: 18px;
+    }
+    p.comments-desc {
+        font-size: 10px;
+    }
+}
+
+
+/* responsive styles for desktop version */
+
+@media screen and (min-width:600px) {
+    .copyrights {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 260px;
+    }
+    p.copyright {
+        font-size: 18px;
+    }
+    p.brand-name {
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .chat-wrapper {
+        position: fixed;
+        bottom: 8%;
+        right: 4%;
+        border-radius: 50px;
+        background-color: #f5f5f5;
+    }
+    .chat img {
+        width: 32px;
+    }
+}
